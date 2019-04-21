@@ -12,7 +12,7 @@ describe "user deletes an article" do
 
         expect(current_path).to eq(articles_path)
         expect(page).to have_content(article_2.title)
-        expect(page).to not_have_content(article_1.title)
+        expect(page).to have_no_content(article_1.title)
 
       end
     end
